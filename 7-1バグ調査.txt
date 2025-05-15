@@ -6,11 +6,12 @@ sousaA = list(input().split())
 
 #バグカウント
 cnt = 0
+sousaApls =''.join(sousaA)
 
 x = str(X)
 
-for i in range(len(sousaA)):
-    if x in sousaA[i]:
+for i in range(len(sousaApls)):
+    if x in sousaApls[i]:
         cnt += 1
 
 print(cnt)
