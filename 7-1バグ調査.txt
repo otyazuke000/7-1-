@@ -1,0 +1,16 @@
+#操作列の個数N、バグ操作X
+N, X = map(int,input().split())
+
+#ユーザによるNこの操作列A入力
+sousaA = list(input().split())
+
+#バグカウント
+cnt = 0
+
+x = str(X)
+
+for i in range(len(sousaA)):
+    if x in sousaA[i]:
+        cnt += 1
+
+print(cnt)
